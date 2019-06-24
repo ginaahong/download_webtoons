@@ -1,0 +1,19 @@
+- Want to use Python3, this conflicts w/ Python2 installed
+    - virtualenv to the rescue!
+    - shout out to previous workplace for this tip
+
+1. Creating virtualenv
+    pip install --upgrade virtualenv
+
+    virtualenv -p python3 envname(webtoon_dl)
+
+2. Activate script
+    source /path/to/ENV/bin/activate
+    (source webtoon_dl/bin/activate)
+
+    python -v --> should show 3.7....
+    python filename.py --> run pythonfile!
+
+3. Checking what packages you have
+    (inside virtualenv)
+    pip list

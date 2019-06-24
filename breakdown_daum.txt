@@ -1,0 +1,19 @@
+- Challenge from a friend to create a program that will download freely available webtoons to view offline.
+
+- Legal disclaimer / warning:
+    The main purpose of building this program was for me to 1) learn how to build a command line tool and 2) get a small taste of how procedures can be automated.
+
+    With these learning objectives in mind, this program was built for people to enjoy free webtoons offline.
+    Please note that using this program to distribute the comics could go against copyright laws.
+
+    In order to ensure that the program is not used to download paid comics or used by others to illegally distribute the comics,
+    some of the code has been manipulated/redacted to not work 'out of the box'.
+
+    More details on why "personal use" is legal.
+        In the Korean copyright law it states:
+        제30조(사적이용을 위한 복제) 공표된 저작물을 영리를 목적으로 하지 아니하고 개인적으로 이용하거나 가정 및 이에 준하는 한정된 범위 안에서 이용하는 경우에는 그 이용자는 이를 복제할 수 있다. 다만, 공중의 사용에 제공하기 위하여 설치된 복사기기에 의한 복제는 그러하지 아니하다.
+
+- What are webtoons?
+
+- Tech used?
+Command line tools w/ Python

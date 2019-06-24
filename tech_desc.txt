@@ -1,0 +1,43 @@
+- Functionality
+
+1. HTML parsing / downloading
+1) Direct link to one episode (get episode name/num, use as "key" in dict)
+    - download all images for this episode (append links to an array)
+    - dictC['epi_num'] = link[]
+2) Link to one comic,
+    - parse how many episodes that are available in comic (for-loop that increments i)
+    - dictC['epi_num'] = link[] (do this for each episode)
+        c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+    - dictC = dict({'epi_one':link1[], 'epi_two':link2[]})
+3) Given array, download all images from each link to target directory
+
+2. Command line interface
+- input [comic link], [Yes or No, one episode or entire comic], [target directory]
+
+3. Tests
+- ?
+
+4. Which library, how to set up python project etc..
+
+    Info on virtualenv is in "using_virtualenv.txt"
+
+    1) Webscraping
+    - Scrapy (Webscraping framework)
+    - Urllib
+        - Not suitable for this project since I'm interested in extracting img src loaded clientside
+        - urllib.request // opening and reading URLS
+        - urllib.error // containing exceptions raised by urllib.request
+        - urllib.parse // parsing URLs
+        - urllib.robotparser // parsing robots.txt files
+        - included in python standard library!
+    - Requests - HTTP for humans
+        - use this on later project?
+    - ** Selenium **
+        - automates browsers based on Java
+        - access via Python Package Selenium
+        - mimics human behav while browsing (click, selection, text box, scroll)
+
+    2) Parsers
+    - extract data from HTML and XML docs
+    - ** BeautifulSoup **
+    - LXML
