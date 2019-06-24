@@ -35,16 +35,28 @@ def naver_get_imgurl(url):
     html = driver.page_source
 
     allpage = BeautifulSoup(html, "html.parser")
-    content = allpage.find("div", {"id": "daumContent"})
-    mainpg = content.find("div", {"id": "cMain"})
+    body = allpage.find("body")
+    wrap = body.find("div", {"id": "wrap"})
+    container = wrap.find("div", {"id": "container"})
+    # print(container)
 
-    beforeimg = mainpg.find("div", {"class": "cont_view"})
-    beforelinks = beforeimg.findAll("img")
+    content = container.find("div", {"class": "webtoon"})
+    # print(content)
+    cont2 = content.find("div", {"class": "section_cont wide"})
 
-    links = []
-    for l in beforelinks:
-        links.append(l['src'])
+    viewarea = cont2.find("div", {"class": "view_area"})
+    beforeimg = viewarea.find("div", {"class": "wt_viewer"})
+    alllinks = beforeimg.findAll("img")
 
-    name = allpage.title.text
+    l_array = []
+    for l in alllinks:
+        if(l.has_attr('id')):
+            l_array.append(l['src'])
 
-    return links, name
+    comic_name = allpage.title.text
+    comic_epi = cont2.find("div", {"class": "tit_area"}).find(
+        "div", {"class": "view"}).find("h3").text
+
+    name = comic_name + comic_epi
+
+    return l_array, name
