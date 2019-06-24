@@ -33,7 +33,7 @@ Using selenium and BS4 to automatically download Daum webtoons for offline readi
  
 
 ## 1. Tech description
-### 0) Virtual Environment
+### Virtual Environment
   I wanted to use Python 3 for this project, but this conflicted with Python2 already installed. Hence, I opted to use virtualenv.
   
   Creating virtualenv:
@@ -59,25 +59,25 @@ Using selenium and BS4 to automatically download Daum webtoons for offline readi
   | chromedriver | 2.24.1 |
   | imageio | 2.5.0 |
 
-### 1) HTML parsing
+### HTML parsing
   There were a lot of options in which tool to use for webscraping. There's Scrapy (webscraping framework), Urllib, and Requests. But I ultimately opted for Selenium!
   I originally tried using urllib, simply because it's included in Python's standard library (meaning no extra installs!), but the images I wanted seem to be loaded clientside via JavaScript.
   (see get_imgurl.py)
 
-### 2) Parsers
+### Parsers
   I knew of two options: LXML and BeautifulSoup. I chose BeautifulSoup since there seemed to be a lot of online tutorials and documentation on it!
   (see get_imgurl.py)
   
-### 3) Downloading the image
+### Downloading the image
   Used imageio to first read the images to a bufferimage, then saving the bufferimage to a specific filepath.
   (see dl_img.py)
 
 
 ## 2. Future plans
-### 1) Daum / Naver distinguishing
+### Daum / Naver distinguishing
   Currently this program only works for Daum webcomics. Later on I plan to make it work for both Daum and Naver webcomics.
   
-### 2) Combine multiple .jpeg
+### Combine multiple .jpeg
   One 'episode' of a webcomic is around ~10 .jpeg files. I hope to later on implement an optional function that just stiches together these images automatically.
   
 ## 3. Legal disclaimer
