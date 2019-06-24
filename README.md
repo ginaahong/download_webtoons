@@ -27,9 +27,9 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
   |----|----|------|
   | https://webtoon.daum.net/webtoon/... | ~/path/to/output/dir | ~/comic_title/...jpeg |
   
-  As of June 23rd 2019, given a link to **1 Daum comic episode**, and a path for the output files, it will download the webcomic as jpeg on to the output directory.
+  As of June 23rd 2019, given a link to **1 DAUM or NAVER comic episode**, and a path for the output files, it will download the webcomic as jpeg/jpg on to the output directory. Make sure the link is surrounded by single quotes ('). This just ensures that the command line arguments are passed correctly to the program, since some links may include ambpersands (&) in them.
   
-    python webtoon_dl.py link... /path/to/output
+    python webtoon_dl.py 'linktowebtoon' /path/to/output
  
 
 ## 1. Tech description
@@ -50,7 +50,7 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
   
     python webtoondl.py link_to_comic /path/to/output
     
-  *There may be some packages to run the program like:*
+  *You may need to install some packages to run the program. Such as:*
   
   | Package | Version |
   |----|----|
@@ -58,6 +58,8 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
   | selenium | 3.141.0 |
   | chromedriver | 2.24.1 |
   | imageio | 2.5.0 |
+  
+    pip install package_name
 
 ### HTML parsing
   There were a lot of options in which tool to use for webscraping. There's Scrapy (webscraping framework), Urllib, and Requests. But I ultimately opted for Selenium!
