@@ -5,10 +5,10 @@ Using selenium and BS4 to automatically download Daum webtoons for offline readi
 
 | Section Name  | Section Description |
 | ------------- | ------------- |
-| [0 - About this project](https://github.com/ginaahong/download_webtoons/master/README.md#0-About-this-project)  | Explaining what this project is and why it was made  |
-| [1 - Tech description](https://github.com/ginaahong/download_webtoons/master/README.md#1-Tech-description)  | Write up on some of the tech involved in the project  |
-| [2 - Future plans](https://github.com/ginaahong/download_webtoons/master/README.md#2-Future-plans) | Additional features I want to add later down the road! |
-| [3 - Legal disclaimer](https://github.com/ginaahong/download_webtoons/master/README.md#3-Legal-disclaimer) | Just a legal disclaimer |
+| [0 - About this project](https://github.com/ginaahong/download_webtoons/blog/master/README.md#0-About-this-project)  | Explaining what this project is and why it was made  |
+| [1 - Tech description](https://github.com/ginaahong/download_webtoons/blob/master/README.md#1-tech-description)  | Write up on some of the tech involved in the project  |
+| [2 - Future plans](https://github.com/ginaahong/download_webtoons/blob/master/README.md#2-Future-plans) | Additional features I want to add later down the road! |
+| [3 - Legal disclaimer](https://github.com/ginaahong/download_webtoons/blob/master/README.md#3-Legal-disclaimer) | Just a legal disclaimer |
 
 ## 0. About this project
 ### What are webtoons?
