@@ -1,6 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 webtoon_dl/
+.DS_Store
+output/
 
 # Distribution / packaging
 .Python
