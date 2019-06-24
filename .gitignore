@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+webtoon_dl/
 
 # C extensions
 *.so
