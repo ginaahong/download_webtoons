@@ -66,11 +66,13 @@ Using selenium and BS4 to automatically download Daum webtoons for offline readi
 
 ### Parsers
   I knew of two options: LXML and BeautifulSoup. I chose BeautifulSoup since there seemed to be a lot of online tutorials and documentation on it!
-  (see get_imgurl.py)
+  
+  ![Here's how I worked on it!](https://github.com/ginaahong/download_webtoons/blob/master/images/workinprogress.png)
   
 ### Downloading the image
   Used imageio to first read the images to a bufferimage, then saving the bufferimage to a specific filepath.
-  (see dl_img.py)
+  
+  ![Here's how an output folder would look like](https://github.com/ginaahong/download_webtoons/blob/master/images/output.png)
 
 
 ## 2. Future plans
