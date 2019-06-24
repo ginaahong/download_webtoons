@@ -13,3 +13,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# copy and paste:
+# python webtoon_dl.py http://webtoon.daum.net/webtoon/viewer/68383 ~/webtoon_dl
