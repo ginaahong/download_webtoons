@@ -85,6 +85,9 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
 ### Combine multiple .jpeg
   One 'episode' of a webcomic is around ~10 .jpeg files. I hope to later on implement an optional function that just stiches together these images automatically.
   
+### One link to download entire webtoon
+  It's quite a hassle to download an entire webtoon with the current system. You have to input a new link for every episode of the comic in order to download everything. I want to implement a feature where it'll automatically go through the entire episode list and download all the episodes available. I expect this to be a bit difficult since there's no easy way to identify how many episodes there are for one comic, and whether or not the comic is 'completed' or not.
+  
 ## 3. Legal disclaimer
   The main purpose of building this program was for me to 1) learn how to build a command line tool and 2) get a small taste of how procedures can be automated.
 
