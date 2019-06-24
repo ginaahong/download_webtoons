@@ -22,4 +22,6 @@ def get_imgurl(url):
     for l in beforelinks:
         links.append(l['src'])
 
-    return links
+    name = allpage.title.text
+
+    return links, name
