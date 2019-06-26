@@ -1,0 +1,12 @@
+- README.md to .rst (restructuredtext)
+    - look into Sphynx? Docsutil?
+- requirements.txt
+    - to list all packages needed
+- reduce num of packages
+    - imageio (not needed, can just use shutil)
+        - gets rid of numpy and pillow
+    - consider using Requests instead of seleinum for entire proj
+- /test
+    - consider making tests...
+    - consider python tool: py.test
+- flake8 and style checking?
