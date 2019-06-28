@@ -53,6 +53,11 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
 
     python webtoondl.py link_to_comic /path/to/output
 
+  OR
+
+    pip install dlwebtoon
+    dlwebtoon 'link_to_webtoon' /path/to/output_directory
+
   *You may need to install some packages to run the program. Such as:*
 
   | Package | Version |
