@@ -58,7 +58,8 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
     pip install dlwebtoon
     dlwebtoon 'link_to_webtoon' /path/to/output_directory
 
-  *You may need to install some packages to run the program. Such as:*
+  ~~*You may need to install some packages to run the program. Such as:*~~
+  With setup.py, all the necessary packages should be installed when you 'pip install dlwebtoon'
 
   | Package | Version |
   |----|----|
