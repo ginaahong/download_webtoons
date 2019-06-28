@@ -1,9 +1,9 @@
 import sys
 import os
 
-from get_imgurl import naver_get_imgurl, daum_get_imgurl
-from dl_img import daum_dl_img, naver_dl_img
-from domain_iden import n_or_d
+from dlwebtoon.get_imgurl import naver_get_imgurl, daum_get_imgurl
+from dlwebtoon.dl_img import daum_dl_img, naver_dl_img
+from dlwebtoon.domain_iden import n_or_d
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
         print("Naver comic given")
         links, name = naver_get_imgurl(input_url)
         naver_dl_img(links, out_dir, name)
-    # links, name = naver_get_imgurl(input_url)
+    # links, name = naverå_get_imgurl(input_url)
     elif (n_or_d(input_url) == 'd'):
         print("Daum comic given")
         links, name = daum_get_imgurl(input_url)
