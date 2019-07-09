@@ -16,3 +16,7 @@ setuptools.setup(
         'console_scripts': ['dlwebtoon=dlwebtoon.webtoon_dl:main'],
     }
 )
+# setup.py enables -->
+# cd /folder/of/webtoon_dl
+# pip install dlwebtoon
+# dlwebtoon 'link_to_comic' /path/to/output_dir

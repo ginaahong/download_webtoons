@@ -9,4 +9,4 @@
 - /test
     - consider making tests...
     - consider python tool: py.test
-- flake8 and style checking?
+- flake8 and style checking? --> I think this is my atom default?
