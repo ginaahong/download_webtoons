@@ -6,6 +6,7 @@ import shutil
 
 def daum_dl_img(links, dir, n):
     # change so that you use requests and shutil (reduce packages by not using imageio (which in turn req numpy and pillow))
+    # random comment
     out_dir = os.path.join(dir, 'output', n)
     length = len(links)
 
