@@ -87,13 +87,13 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
 
 
 ## 2. Future plans
-### Daum / Naver distinguishing - DONE (June 24 2019)
+### DONE (June 24 2019) - Daum / Naver distinguishing
   ~~Currently this program only works for Daum webcomics. Later on I plan to make it work for both Daum and Naver webcomics.~~
   I have now implemented support for Naver webtoons too. This was a bit harder since there were some 403 forbidden errors and such. But I found an adequate work around in providing user agents.
 
-### Setup.py and running in command line
-    I have now implemented this!
-
+### DONE (June 28 2019) - Setup.py and running in command line
+  I have now implemented this!
+  
         pip install dlwebtoon
         dlwebtoon 'link_to_comic' /path/to/output
 
