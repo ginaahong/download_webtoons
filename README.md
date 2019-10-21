@@ -5,7 +5,7 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
 
 | Section Name  | Section Description |
 | ------------- | ------------- |
-| [0 - About this project](https://github.com/ginaahong/download_webtoons/blob/master/README.md#0-about-this-project)  | Explaining what this project is and why it was made  |
+| [0 - About this project](https://github.com/ginaahong/download_webtoons/blob/master/README.md#0-about-this-project)  | Explaining what this project is and why it was made. (Also some troubleshooting tips!)  |
 | [1 - Tech description](https://github.com/ginaahong/download_webtoons/blob/master/README.md#1-tech-description)  | Write up on some of the tech involved in the project  |
 | [2 - Future plans](https://github.com/ginaahong/download_webtoons/blob/master/README.md#2-future-plans) | Additional features I want to add later down the road! |
 | [3 - Legal disclaimer](https://github.com/ginaahong/download_webtoons/blob/master/README.md#3-legal-disclaimer) | Just a legal disclaimer |
@@ -33,6 +33,16 @@ Using selenium and BS4 to automatically download Daum and Naver webtoons for off
 
     pip install dlwebtoon
     dlwebtoon 'link_to_webtoon' /path/to/output_directory
+  
+### The program isn't running!
+
+  This may be due to 1) your virtualenv. Just try
+
+    pip install --upgrade virtualenv
+    find webtoon_dl -type l delete // webtoon_dl is the name I chose for my virtualenv
+    virtualenv -p python3 webtoon_dl
+
+  Other issues may arise from 2) the Selenium Chrome webdriver. In that case, visit [here](https://chromedriver.chromium.org/downloads) and download the corresponding webdriver for your version of chrome. Then drop the chromedriver.exe file into ~/webtoon_dl folder.
 
 
 ## 1. Tech description
